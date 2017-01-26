@@ -1,0 +1,36 @@
+<%= form_for @movie do |f| %>
+
+  <%= f.hidden_field :actor_id, :value => @movie.actor.id%>
+
+  <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control", placeholder: ". . ." %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :year %>
+    <%= f.text_field :year, class: "form-control", placeholder: ". . ." %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :cover %>
+    <%= f.text_field :cover, class: "form-control", placeholder: ". . ." %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :plot %>
+    <%= f.text_field :plot, class: "form-control", placeholder: ". . ." %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :genres, :class => "control-label" %>
+    <div>
+      <% genres = Genre.all.map {|t| [t.name, t.id]}.sort %>
+      <%= f.select :genre_ids, genres, {class: "form-control", prompt: true}, { multiple: true, size: 10 } %>
+      <p class="help-block">Select multiple with ctrl</p>
+    </div>
+  </div>
+
+  <%= f.submit (@movie.new_record? ? "Create" : "Update"), class: "form-control btn-primary" %>
+
+<% end %>

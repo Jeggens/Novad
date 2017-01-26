@@ -1,0 +1,26 @@
+<div class="movie-item">
+
+   <div class="inline cover">
+      <img class="small-cover" src="<%= movie.cover %>"/>
+   </div>
+
+   <div class="inline details">
+
+      <h3><%= link_to movie.title, movie %></h3>
+
+      <% if !defined?(hide_actor) || !hide_actor %>
+        <h4><%= link_to movie.actor.name, movie.actor %></h4>
+      <% end %>
+
+      <p><%= movie.year %></p>
+      <p><%= movie.plot %></p>
+
+      <p>
+         <% movie.genres.each do |genre| %>
+             <%= link_to "#{genre.name}", genre, class: "btn btn-primary btn-xs" %>
+         <% end %>
+      </p>
+
+   </div>
+
+</div>

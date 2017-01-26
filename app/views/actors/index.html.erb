@@ -1,0 +1,6 @@
+<h1>Actors
+    <%= link_to "New Actor", new_actor_path, class: "btn btn_default", style: "float: right" %></h1>
+
+<% @actors.each do |actor| %>
+<p><%= link_to actor.name, actor %></p>
+<% end %>
