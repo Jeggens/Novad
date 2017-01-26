@@ -1,7 +1,7 @@
 <h1>
   <%= @actor.name %>
-  <%= link_to "Delete", actor_path( @actor ), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default", style: "float: right" %>
-  <%= link_to "Edit", edit_actor_path( @actor ), class: "btn btn-default", style: "float: right" %>
+  <%= link_to "Delete", actor_path( @actor ), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger", style: "float: right" %>
+  <%= link_to "Edit", edit_actor_path( @actor ), class: "btn btn-warning", style: "float: right" %>
 </h1>
 
 <H3> Age: <%= @actor.age %></H3>
@@ -10,7 +10,7 @@
 
 <h2>Movies</h2>
 
-<%= link_to "New Movies", new_movie_path( actor_id: @actor.id ), class: "btn btn-default", style: "float: right" %>
+<%= link_to "New Movies", new_movie_path( actor_id: @actor.id ), class: "btn btn-success", style: "float: right" %>
 
 <% movies = @actor.movies.sort_by { |movie| movie.year } %>
 <%= render movies, hide_actor: true %>
