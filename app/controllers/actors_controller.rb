@@ -1,6 +1,11 @@
 class ActorsController < ApplicationController
   def index
     @actors = Actor.all.sort_by { |actor| actor.name }
+    if params[:search]
+      @actors = Actor.search(params[:search])
+    else
+      @actors = Actor.all.sort_by { |actor| actor.name }
+    end
   end
 
   def show
@@ -42,7 +47,7 @@ class ActorsController < ApplicationController
 
     redirect_to actors_path
   end
-  
+
 private
 
   def actor_params

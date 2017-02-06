@@ -1,4 +1,16 @@
-<h1>Actors
+<h1>Actors</h1>
+
+  <%= form_tag(actors_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Actors" %>
+  <%= submit_tag "Search" %>
+  <% end %>
+
+  <% if @actors.present? %>
+    <%= render @actors %>
+  <% else %>
+    <p>There are no actors with the name <%= params[:search] %>.</p>
+  <% end %>
+
     <%= link_to "Add a new Actor", new_actor_path, class: "btn btn-primary btn-lg", style: "float: right" %></h1>
 
 <% @actors.each do |actor| %>
