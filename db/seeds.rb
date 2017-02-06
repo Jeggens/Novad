@@ -88,6 +88,12 @@ actor_movies["Orlando Bloom"] = [
   That night, the Black Pearl, which Elizabeth saw as a child, attacks Port Royal searching for the medallion. The crew of the Black Pearl capture Elizabeth, taking her to meet Captain Barbossa for negotiations. Elizabeth claims her last name is Turner, to conceal her identity as the governor's daughter, but Barbossa takes her prisoner. Elizabeth learns that after Barbossa's crew took the treasure of Cortés from Isla de Muerta, they were cursed as immortals; they appear as heavily decomposed corpses in moonlight. To lift the curse, they need to return all 882 gold pieces with the blood of the owner of each piece. Elizabeth's medallion is the final piece.
   Will Turner frees Jack to rescue Elizabeth, whom he is in love with. Jack agrees upon learning Will’s surname. The two commandeer the HMS Interceptor and head for Tortuga to recruit a crew, including Jack’s friend Joshamee Gibbs. Jack reveals that Will’s father Bootstrap Bill Turner was a pirate, who was thrown overboard while tied by his bootstraps to a cannonball. Gibbs tells Will that Jack was captain of the Black Pearl until Barbossa mutinied and marooned him. At Isla de Muerta, Will and Jack witness Barbossa sacrificing Elizabeth's blood and the final gold piece. The curse is not lifted because the medallion belonged to Bootstrap Bill, making Will the owner by bloodline. Will rescues Elizabeth and brings her to the Interceptor, while Jack is captured by Barbossa and his crew and gets locked in the brig of the Black Pearl.",
   "Action, Adventure, Comedy, Fantasy, Historial, Science Fiction"
+],
+  ["The lord of the rings - The fellowship of the ring",
+    2001,
+    "https://images-na.ssl-images-amazon.com/images/M/MV5BNTEyMjAwMDU1OV5BMl5BanBnXkFtZTcwNDQyNTkxMw@@._V1_UY268_CR0,0,182,268_AL_.jpg",
+    "Set in Middle-earth, the story tells of the Dark Lord Sauron (Sala Baker), who is seeking the One Ring. The Ring has found its way to the young hobbit Frodo Baggins (Elijah Wood). The fate of Middle-earth hangs in the balance as Frodo and eight companions who form the Fellowship of the Ring begin their journey to Mount Doom in the land of Mordor, the only place where the Ring can be destroyed.",
+    "War, Fantasy, Adventure, Drama, Science Fiction, Action"
   ]
 ]
 

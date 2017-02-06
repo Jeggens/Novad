@@ -10,9 +10,3 @@
   <% else %>
     <p>There are no actors with the name <%= params[:search] %>.</p>
   <% end %>
-
-    <%= link_to "Add a new Actor", new_actor_path, class: "btn btn-primary btn-lg", style: "float: right" %></h1>
-
-<% @actors.each do |actor| %>
-<p><%= link_to actor.name, actor %></p>
-<% end %>
