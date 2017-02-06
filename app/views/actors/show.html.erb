@@ -10,7 +10,7 @@
 
 <h2>Movies</h2>
 
-<%= link_to "New Movies", new_movie_path( actor_id: @actor.id ), class: "btn btn-success", style: "float: right" %>
+<%= link_to "Add new movie", new_movie_path( actor_id: @actor.id ), class: "btn btn-success", style: "float: right" %>
 
 <% movies = @actor.movies.sort_by { |movie| movie.year } %>
 <%= render movies, hide_actor: true %>

@@ -1,5 +1,12 @@
-<h1>Novad</h1>
-
-<a href="<%= actors_path %>"><div class="nav-box actors"><h2>Actors</h2></div>'</a>
-<a href="<%= movies_path %>"><div class="nav-box movies"><h2>Movies</h2></div>'</a>
-<a href="<%= genres_path %>"><div class="nav-box genres"><h2>Genres</h2></div>'</a>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Novad</h1>
+    <div class="btn-group btn-group-justified">
+      <a href="<%= actors_path %>" class="btn btn-primary"><h2>Actors</h2></a>
+      <a href="<%= movies_path %>" class="btn btn-danger"><h2>Movies</h2></a>
+      <a href="<%= genres_path %>" class="btn btn-success"><h2>Genres</h2></a>
+    </div>
+    <hr />
+    <p>The most popular tool to check out the latest movies! Keep track of what your favorite actor is up to!</p>
+  </div>
+</div>
