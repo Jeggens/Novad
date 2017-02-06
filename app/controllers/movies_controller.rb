@@ -1,6 +1,11 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all.sort_by { |movie| movie.year }
+    @movies = Movie.all
+    if params[:search]
+      @movies = Movie.search(params[:search])
+    else
+      @movies = Movie.all.sort_by { |movie| movie.year }
+    end
   end
 
   def show
