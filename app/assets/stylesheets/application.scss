@@ -44,7 +44,14 @@ div#main {
   border: 4px solid transparent;
   padding: 5px 0;
 }
-// 
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 50%;
+    margin: auto;
+}
+
+//
 // header {
 //   padding: 300px;
 //   text-align: center;
